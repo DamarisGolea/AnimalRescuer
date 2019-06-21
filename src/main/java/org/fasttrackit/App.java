@@ -36,5 +36,10 @@ public class App
        vet.name = "Dr. Jason Lee ";
        vet.specialty = "internal medicine";
 
+       PetAccessories accessories = new PetAccessories();
+       accessories.name = "ball";
+       accessories.price = 10.12;
+       accessories.type = "toys";
+
     }
 }

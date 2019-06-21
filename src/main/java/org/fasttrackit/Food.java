@@ -9,5 +9,4 @@ public class Food {
     LocalDate expirationDate;
     boolean availabilityInStock;
     String type;
-
 }

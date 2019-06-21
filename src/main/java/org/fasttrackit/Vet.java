@@ -1,9 +1,6 @@
 package org.fasttrackit;
 
-public class Vet {
-    String name;
+public class Vet extends Person {
     String specialty;
-    int age;
-    String sex;
 }
 

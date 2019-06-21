@@ -1,10 +1,6 @@
 package org.fasttrackit;
 
-public class Adopter {
-    String name;
+public class Adopter extends Person {
     double amountOfMoneyAvailable;
-    String sex;
-    int age;
-
 
 }
