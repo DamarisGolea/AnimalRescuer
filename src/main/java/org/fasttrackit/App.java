@@ -22,12 +22,13 @@ public class App
        adopter.name = "Caroline";
        adopter.amountOfMoneyAvailable = 300;
 
-       Food food = new Food();
-       food.name = "Pedigree";
-       food.price = 30.99;
-       food.quantity = 100;
-       food.availabilityInStock = true;
-       food.expirationDate = LocalDate.of(2020,2,22);
+        Food food = new Food();
+        food.name = "Pedigree";
+        food.price = 30.99;
+        food.expirationDate = LocalDate.of(2020,2,22);
+        food.quantity = 100;
+        food.availabilityInStock = true;
+
 
        RecreationalActivity recreationalActivity = new RecreationalActivity();
        recreationalActivity.name = "running in the park";
@@ -40,6 +41,8 @@ public class App
        accessories.name = "ball";
        accessories.price = 10.12;
        accessories.type = "toys";
+       accessories.brands = "KONG";
+       accessories.color = "blue";
 
     }
 }
