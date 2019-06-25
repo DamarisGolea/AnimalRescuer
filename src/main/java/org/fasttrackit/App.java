@@ -10,32 +10,42 @@ public class App
 {
     public static void main( String[] args ) {
         Animal dog = new Mammal("Bubico", 10);
-        dog.age = 1;
-        dog.favoriteFood = "bones";
-        dog.levelOfHealth = 7;
-        dog.levelOfMood = 6;
-        dog.favoriteRecreationalActivity = "running";
+        dog.setAge(1);
+        dog.setFavoriteFood("bones");
+        dog.setLevelOfHealth(7);
+        dog.setLevelOfMood(6);
+        dog.setFavoriteRecreationalActivity("running");
+
+        System.out.println(dog.getName());
 
         Adopter adopter = new Adopter("Caroline", "F");
-        adopter.amountOfMoneyAvailable = 300;
+        adopter.setAmountOfMoneyAvailable(300);
+
+        System.out.println(adopter.getAmountOfMoneyAvailable());
 
         Food food = new Food("Pedigree", LocalDate.of(2020,2,22));
-        food.price = 30.99;
-        food.quantity = 100;
-        food.availabilityInStock = true;
+        food.setPrice(30.99);
+        food.setQuantity(100);
+        food.setAvailabilityInStock(true);
 
-
+        System.out.println(food.getExpirationDate());
+        
         RecreationalActivity recreationalActivity = new RecreationalActivity("running in the park");
-        recreationalActivity.type = "sport";
-        recreationalActivity.durationInMinutes = 30;
+        recreationalActivity.setType("sport");
+        recreationalActivity.setDurationInMinutes(30);
+
+        System.out.println(recreationalActivity.getName());
 
         Vet vet = new Vet("Jason Lee", "M");
-        vet.specialty = "internal medicine";
+        vet.setSpecialty("internal medicine");
 
-        PetAccessory accessories = new PetAccessory("toys",10.12);
-        accessories.name = "ball";
-        accessories.brands = "KONG";
-        accessories.color = "blue";
+        System.out.println(vet.getName());
+        
+        PetAccessory accessory = new PetAccessory("toys",10.12);
+        accessory.setName("ball");
+        accessory.setBrand("KONG");
+        accessory.setColor("blue");
 
+        System.out.println(accessory.getType());
     }
 }

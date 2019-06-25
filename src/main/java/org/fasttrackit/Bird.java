@@ -1,11 +1,27 @@
 package org.fasttrackit;
 
 public class Bird extends Animal {
-    String species;
-    boolean abilityToFly;
+    private String species;
+    private boolean abilityToFly;
 
 
     public Bird(String name, int levelOfHunger) {
         super(name, levelOfHunger);
+    }
+
+    public String getSpecies() {
+        return species;
+    }
+
+    public void setSpecies(String species) {
+        this.species = species;
+    }
+
+    public boolean isAbilityToFly() {
+        return abilityToFly;
+    }
+
+    public void setAbilityToFly(boolean abilityToFly) {
+        this.abilityToFly = abilityToFly;
     }
 }
