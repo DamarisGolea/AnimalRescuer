@@ -9,40 +9,33 @@ import java.time.LocalDate;
 public class App 
 {
     public static void main( String[] args ) {
-        Animal animal = new Animal();
-        animal.name = "Bubico";
-        animal.age = 1;
-        animal.favoriteFood = "bones";
-        animal.levelOfHealth = 7;
-        animal.levelOfHunger = 10;
-        animal.levelOfMood = 6;
-        animal.favoriteRecreationalActivity = "running";
+        Animal dog = new Mammal("Bubico", 10);
+        dog.age = 1;
+        dog.favoriteFood = "bones";
+        dog.levelOfHealth = 7;
+        dog.levelOfMood = 6;
+        dog.favoriteRecreationalActivity = "running";
 
-       Adopter adopter = new Adopter();
-       adopter.name = "Caroline";
-       adopter.amountOfMoneyAvailable = 300;
+        Adopter adopter = new Adopter("Caroline", "F");
+        adopter.amountOfMoneyAvailable = 300;
 
-        Food food = new Food();
-        food.name = "Pedigree";
+        Food food = new Food("Pedigree", LocalDate.of(2020,2,22));
         food.price = 30.99;
-        food.expirationDate = LocalDate.of(2020,2,22);
         food.quantity = 100;
         food.availabilityInStock = true;
 
 
-       RecreationalActivity recreationalActivity = new RecreationalActivity();
-       recreationalActivity.name = "running in the park";
+        RecreationalActivity recreationalActivity = new RecreationalActivity("running in the park");
+        recreationalActivity.type = "sport";
+        recreationalActivity.durationInMinutes = 30;
 
-       Vet vet = new Vet();
-       vet.name = "Dr. Jason Lee ";
-       vet.specialty = "internal medicine";
+        Vet vet = new Vet("Jason Lee", "M");
+        vet.specialty = "internal medicine";
 
-       PetAccessories accessories = new PetAccessories();
-       accessories.name = "ball";
-       accessories.price = 10.12;
-       accessories.type = "toys";
-       accessories.brands = "KONG";
-       accessories.color = "blue";
+        PetAccessory accessories = new PetAccessory("toys",10.12);
+        accessories.name = "ball";
+        accessories.brands = "KONG";
+        accessories.color = "blue";
 
     }
 }

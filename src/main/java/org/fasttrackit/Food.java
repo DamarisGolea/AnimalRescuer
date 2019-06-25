@@ -9,5 +9,8 @@ public class Food {
     LocalDate expirationDate;
     boolean availabilityInStock;
 
-
+    public Food(String name, LocalDate expirationDate) {
+        this.name = name;
+        this.expirationDate = expirationDate;
+    }
 }

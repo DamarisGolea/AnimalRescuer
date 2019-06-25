@@ -11,4 +11,8 @@ public class Animal {
    String favoriteRecreationalActivity;
    String sex;
 
+   public Animal(String name, int levelOfHunger) {
+      this.name = name;
+      this.levelOfHunger = levelOfHunger;
+   }
 }
