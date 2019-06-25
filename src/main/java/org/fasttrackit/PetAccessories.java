@@ -1,6 +1,9 @@
 package org.fasttrackit;
 
-public class PetAccessories extends Shop{
+public class PetAccessories {
+    String name;
+    String type;
+    Double price;
     String brands;
     String color;
 }

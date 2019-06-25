@@ -2,9 +2,12 @@ package org.fasttrackit;
 
 import java.time.LocalDate;
 
-public class Food extends Shop{
+public class Food {
+    String name;
+    int quantity;
+    Double price;
     LocalDate expirationDate;
     boolean availabilityInStock;
-    int quantity;
+
 
 }

@@ -9,8 +9,6 @@ public class Animal {
    int levelOfMood;
    String favoriteFood;
    String favoriteRecreationalActivity;
-   String species;
-   String breed;
    String sex;
 
 }
