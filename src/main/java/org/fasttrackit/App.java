@@ -56,6 +56,8 @@ public class App {
 
         Animal bird = new Bird("Max", 1);
         bird.positiveMood();
+
+
     }
 
 }
