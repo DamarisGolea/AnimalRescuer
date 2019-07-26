@@ -51,6 +51,11 @@ public class App {
 
         adopter.activityDoing(dog, recreationalActivity);
         System.out.println("Bubico had some recreational activity.");
+
+        dog.positiveMood();
+
+        Animal bird = new Bird("Max", 1);
+        bird.positiveMood();
     }
 
 }

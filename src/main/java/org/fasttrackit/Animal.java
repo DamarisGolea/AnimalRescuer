@@ -16,6 +16,11 @@ public class Animal {
       this.levelOfHunger = levelOfHunger;
    }
 
+   public String positiveMood (){
+      return "Animal mood.";
+   }
+
+
    public String getName() {
       return name;
    }

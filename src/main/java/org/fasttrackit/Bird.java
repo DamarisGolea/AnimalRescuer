@@ -9,6 +9,12 @@ public class Bird extends Animal {
         super(name, levelOfHunger);
     }
 
+    @Override
+    public String positiveMood() {
+        System.out.println("Bird is singing");
+        return super.positiveMood();
+    }
+
     public String getSpecies() {
         return species;
     }

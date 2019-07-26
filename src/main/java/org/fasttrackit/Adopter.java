@@ -22,4 +22,5 @@ public class Adopter extends Person {
     public void setAmountOfMoneyAvailable(double amountOfMoneyAvailable) {
         this.amountOfMoneyAvailable = amountOfMoneyAvailable;
     }
+
 }
