@@ -9,9 +9,8 @@ public class Mammal extends Animal {
     }
 
     @Override
-    public String positiveMood() {
-        System.out.println("Mammal is tail wagging.");
-        return super.positiveMood();
+    public void positiveMood() {
+        System.out.println(getName() + " is tail wagging.");
     }
 
     public String getBreed() {

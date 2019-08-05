@@ -7,12 +7,17 @@ import java.time.LocalDate;
  */
 public class App {
     public static void main(String[] args) {
+
+        // Creation of objects
         Animal dog = new Mammal("Bubico", 10);
         dog.setAge(1);
         dog.setFavoriteFood("bones");
         dog.setLevelOfHealth(7);
         dog.setLevelOfMood(6);
         dog.setFavoriteRecreationalActivity("running");
+
+        Animal animal = new Animal("Jerry", 9);
+        Animal bird = new Bird("Max", 1);
 
         System.out.println(dog.getName());
 
@@ -52,12 +57,15 @@ public class App {
         adopter.activityDoing(dog, recreationalActivity);
         System.out.println("Bubico had some recreational activity.");
 
+        // Homework
+        // Polymorphism
         dog.positiveMood();
-
-        Animal bird = new Bird("Max", 1);
         bird.positiveMood();
+        animal.positiveMood();
 
-
+//        System.out.println(dog instanceof Animal);
+//        System.out.println(dog instanceof Mammal);
+//        System.out.println(animal instanceof Mammal);
     }
 
 }
