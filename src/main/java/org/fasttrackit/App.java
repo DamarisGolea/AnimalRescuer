@@ -11,10 +11,10 @@ public class App {
         // Creation of objects
         Animal dog = new Mammal("Bubico", 10);
         dog.setAge(1);
-        dog.setFavoriteFood("bones");
+        dog.setFavoriteFood("Pedigree");
         dog.setLevelOfHealth(7);
         dog.setLevelOfMood(6);
-        dog.setFavoriteRecreationalActivity("running");
+        dog.setFavoriteRecreationalActivity("playing with the ball");
 
         Animal animal = new Animal("Jerry", 9);
         Animal bird = new Bird("Max", 1);
