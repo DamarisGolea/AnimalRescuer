@@ -8,6 +8,9 @@ import java.time.LocalDate;
 public class App {
     public static void main(String[] args) {
 
+        Game game = new Game();
+        game.start();
+
         // Creation of objects
         Animal dog = new Mammal("Bubico", 10);
         dog.setAge(1);
@@ -67,5 +70,4 @@ public class App {
 //        System.out.println(dog instanceof Mammal);
 //        System.out.println(animal instanceof Mammal);
     }
-
 }
