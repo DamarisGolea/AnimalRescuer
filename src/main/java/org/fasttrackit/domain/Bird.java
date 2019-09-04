@@ -1,4 +1,6 @@
-package org.fasttrackit;
+package org.fasttrackit.domain;
+
+import org.fasttrackit.domain.Animal;
 
 public class Bird extends Animal {
     private String species;

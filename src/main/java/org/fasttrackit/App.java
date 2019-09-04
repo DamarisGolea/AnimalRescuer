@@ -1,5 +1,9 @@
 package org.fasttrackit;
 
+import org.fasttrackit.domain.Animal;
+import org.fasttrackit.domain.Bird;
+import org.fasttrackit.domain.Mammal;
+
 import java.time.LocalDate;
 
 /**

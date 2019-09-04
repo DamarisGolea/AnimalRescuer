@@ -1,7 +1,8 @@
-package org.fasttrackit;
+package org.fasttrackit.domain;
 
 public class Animal {
 
+   private long id;
    private String name;
    private int age;
    private int levelOfHealth;
@@ -17,10 +18,16 @@ public class Animal {
    }
 
    public void positiveMood (){
-      System.out.println("Animal is dancing.");
+      System.out.println(getName() + " is dancing.");
    }
 
+   public long getId() {
+      return id;
+   }
 
+   public void setId(long id) {
+      this.id = id;
+   }
    public String getName() {
       return name;
    }
