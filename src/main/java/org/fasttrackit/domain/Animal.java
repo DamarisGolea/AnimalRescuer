@@ -91,4 +91,6 @@ public class Animal {
    public void setSex(String sex) {
       this.sex = sex;
    }
+
 }
+
